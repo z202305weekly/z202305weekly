@@ -74,7 +74,7 @@ b,div,p:not(.navitem){
 	-webkit-transition:0.5s linear;
 	-moz-transition:0.5s linear;
 	text-decoration:none;
-	font-size:10px;
+	font-size:20px;
 }
 .block#hover{
 	border-color:lightcyan;
