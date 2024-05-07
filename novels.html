@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>五班周刊</title>
+	</head>
+	<body>
+		<style>
+			body{
+				width:100%;
+				height:100%;
+			}
+			.nav{
+				width:100%;
+				height:26px;
+				background-color:lightgrey;
+				white-space:nowrap;
+				position:absolute;
+				z-index:999;
+				top:0px;
+				left:0px;
+			}
+			.navitem{
+				background-color:lightblue;
+				font-family:"微软雅黑";
+				font-size:15px;
+				cursor:hand;
+				transition:0.5s linear;
+				-webkit-transition:0.5s linear;
+				-moz-transition:0.5s linear;
+				padding:5px 35px;
+				border-bottom-color:lightgrey;
+				text-decoration:none;
+				color:black;
+				white-space:nowrap;
+				overflow:hidden;
+				border-bottom:2px;
+			}
+			.selected{
+				border-bottom-color:blue;
+				background-color:deepskyblue;
+				padding:5px 50px;
+				white-space:nowrap;
+				cursor:default;
+			}
+			.navitem:hover{
+				border-bottom-color:deepskyblue;
+				background-color:skyblue;
+			}
+			.selected:hover{
+				border-bottom-color:blue;
+				background-color:deepskyblue;
+			}
+			h1{
+				color:#00BFFF;
+				font-size:30px;
+			}
+			h2{
+				color:#87CEEB;
+				font-size:25px;
+			}
+			h3{
+				color:#ADD8E6;
+				font-size:22.5px;
+			}
+			p{
+				color:black;
+				text-decoration:none;
+				font-size:20px;
+			}
+			#content{
+				position:relative;
+				top:27px;
+			}
+			.block{
+				border-radius:2px;
+				overflow:hidden;
+				white-space:nowrap;
+				text-decoration:none;
+				/*font-size:70%;*/
+			}
+			.red{
+				background-color:red;
+				color:white;
+			}
+			.blue{
+				background-color:skyblue;
+				color:white;
+			}
+			a{
+				color:blue;
+				text-decoration:none;
+				overflow:hidden;
+				white-space:nowrap;
+			}
+		</style>
+		<div class="nav">
+			<a class="navitem" href="index.html">首页</a>
+			<a class="navitem" href="previous.html">往期查阅</a>
+			<a class="navitem selected">刊登小说</a>
+			<a class="navitem" href="announcement.html">最新消息</a>
+		</div>
+		<div id="content">
+			<a href="novels/1.html"><b class="block red">连</b>《缩小日记》 </a>
+			</br>
+			<a href="novels/2.html"><b class="block blue">选</b>《虚伪的面具》</a>
+			</br>
+			<a href="novels/3.html"><b class="block red">连</b>《拉克姆之战》</a>
+		</div>
+	</body>
+</html>
