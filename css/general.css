@@ -30,8 +30,7 @@ body{
 }
 .selected{
 	border-bottom-color:blue;
-	background-color:deepskyblue;
-	padding:5px 50px;
+	background-color:skyblue;
 	white-space:nowrap;
 	cursor:default;
 }
@@ -66,8 +65,7 @@ b,div,p:not(.navitem){
 }
 .block{
 	border-radius:2px;
-	border:2px 2px 2px 2px;
-	border-color:lightblue;
+	border:1px blue;
 	/*background-color:lightblue;*/
 	cursor:hand;
 	transition:0.5s linear;
@@ -77,7 +75,7 @@ b,div,p:not(.navitem){
 	font-size:20px;
 }
 .block#hover{
-	border-color:lightcyan;
+	border:1px lightcyan;
 	/*background-color:lightcyan;*/
 }
 a:not(.navitem){
