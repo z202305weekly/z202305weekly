@@ -14,7 +14,6 @@ body{
 }
 .navitem{
 	background-color:lightblue;
-	font-family:"微软雅黑";
 	font-size:15px;
 	cursor:hand;
 	transition:0.5s linear;

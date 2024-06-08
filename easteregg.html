@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>五班周刊</title>
+		<link rel="stylesheet" href="css/general.css">
+		<style>
+			#cursor{
+				width:2px;
+				height:20px;
+				background-color:darkblue;
+				display:block;
+				overflow:hidden;
+				white-space:nowrap;
+			}
+			#text{
+				overflow:hidden;
+				white-space:nowrap;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="index.html">返回主页</a>
+		<div id="content">
+			<h1>恭喜你发现彩蛋！</h1>
+			<div id="text"></div>
+			<div id="cursor"></div>
+			<script>
+				var tag=document.getElementById("text");
+				var cursor=document.getElementById("cursor");
+				var txt="开   发   大   事   记\n\n2024-04 开发正式开始 \n2024-04-24 第一篇公告发布 & 正式建站 \n2024-05-02 第一批报刊图片上传 \n2024-05-07 网站更新 & 第一次搬迁 \n2024-05-10 第一部小说的查看全文功能发布 \n2024-06-06 网站V1.0.0发布\n\n未  完  待  续......";
+				var cur=0;
+				var cnt=0;
+				setInterval(function(){
+					if(cur>=txt.length)return;
+					if(txt[cur]=="\n")tag.innerHTML+="<br>";
+					else tag.innerHTML+=txt[cur];
+					cur++;
+				},50);
+				setInterval(function(){
+					if(cursor.style.display=="block")cursor.style.display="none";
+					else cursor.style.display="block";
+				},500);
+				var eastereggs=["Hello world!","这个网页的开发者从来页没有想到会有人看到这个","既然看到了，说明你很强orz","请在洛谷上私信@houmy，我会关注你的。","byebye~","<script>document.body.innerHTML=\"\";<\/script>"]
+				setInterval(function(){
+					cnt++;
+					if(cnt>=120){
+						cursor.style.display="none";
+						tag.innerHTML=eastereggs[parseInt((cnt-120)/10)];
+					}
+				},1000);
+			</script>
+		</div>
+	</body>
+</html>
